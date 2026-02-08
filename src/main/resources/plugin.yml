@@ -1,0 +1,25 @@
+name: OverworldCrateRewards
+version: ${version}
+main: com.overworldcraterewards.OverworldCrateRewardsPlugin
+api-version: '1.21'
+description: Custom QoL rewards for Skyblock crates - making manual farming competitive
+author: Tom
+depend: [Vault]
+softdepend: [EconomyShopGUI, EconomyShopGUI-Premium, RoseStacker]
+
+commands:
+  ocr:
+    description: Main command for OverworldCrateRewards
+    usage: /<command> [give|reload|help]
+    permission: overworldcraterewards.use
+
+permissions:
+  overworldcraterewards.use:
+    description: Allows basic plugin usage
+    default: true
+  overworldcraterewards.give:
+    description: Allows giving custom items
+    default: op
+  overworldcraterewards.reload:
+    description: Allows reloading configuration
+    default: op
